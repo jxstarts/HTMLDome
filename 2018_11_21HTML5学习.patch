@@ -1,0 +1,136 @@
+Index: 07- 定义列表.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- 07- 定义列表.html	(date 1542793668815)
++++ 07- 定义列表.html	(date 1542793668815)
+@@ -0,0 +1,14 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>定义列表</title>
++</head>
++<body>
++<dl>
++    <dt>北京</dt>
++    <dd>中国的首都</dd>
++</dl>
++<!-- 应用场景 网站尾部相关信息 图文混排等 -->
++</body>
++</html>
+\ No newline at end of file
+Index: dome.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- dome.html	(revision 4b5e8a0e8c59c05469c4bb52b84b19e0e63f9ea6)
++++ dome.html	(date 1542784858661)
+@@ -8,5 +8,27 @@
+ 11231231231232131
+ 
+ <!-- webstorm 注册码获得 http://idea.lanyus.com/ -->
++<!-- base 标签就是专门来统一指定档期啊你网页中所有的超链接a标签的属性 base 只能写在head标签内  -->
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++<p id="center">111111</p>
++
+ </body>
+ </html>
+\ No newline at end of file
+Index: 06- 列表.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- 06- 列表.html	(date 1542793037308)
++++ 06- 列表.html	(date 1542793037308)
+@@ -0,0 +1,17 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>列表</title>
++</head>
++<body>
++<ul>
++    <li>北京</li>
++    <li>上海</li>
++    <li>广东</li>
++    <li>深圳</li>
++    <li>武汉</li>
++</ul>
++<!-- 快速生成方法 ul>li*5>h2+ul>li*3 -->
++</body>
++</html>
+\ No newline at end of file
+Index: 05- 锚点.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- 05- 锚点.html	(date 1542784847846)
++++ 05- 锚点.html	(date 1542784847846)
+@@ -0,0 +1,42 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>锚点</title>
++</head>
++<body>
++<!-- 锚点跳转通过a标签跳转 -->
++<h1>顶部</h1>
++<a href="#center">跳转到中部</a>
++
++
++
++
++
++
++
++
++
++
++
++<h1 id="center">中部</h1>
++<a href="dome.html#center"></a>
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++<h1>底部</h1>
++
++</body>
++</html>
+\ No newline at end of file
