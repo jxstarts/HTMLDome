@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+
+        div::before{
+            content: "heheheh";
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            display: block;
+        }
+
+        div::after{
+            /*指定添加的子元素中存储的内容*/
+            content: "ddddddd";
+            /**/
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            display: block;
+            /*隐藏*/
+            visibility: hidden;
+
+            clear: both;
+        }
+        div{
+            /*兼容IE6*/
+            *zoom:1;
+
+        }
+
+        div{
+            /*清除浮动*/
+            overflow: hidden;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div>
+
+    hahahah
+
+</div>
+</body>
+</html>
