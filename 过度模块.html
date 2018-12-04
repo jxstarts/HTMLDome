@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过度模块</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            /*告诉系统那个属性需要执行过度效果*/
+            transition-property: width,background-color;
+            /*告诉系统过度持续时长*/
+            transition-duration: 5s,5s;
+        }
+        /*属性变化*/
+        div:hover{
+            width: 300px;
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过度模块连写</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            /* transition: 过度的属性 过度的时长 运动速度 延迟的时间;*/
+            /*多个属性用逗号隔开*/
+            transition: width, 5s linear 0s,background-color 5s linear 0s;
+            /*如果多个属性速度延迟时间持续时间都一样可以简写为*/
+            transition: all 5s;
+        }
+        div:hover{
+            width: 300px;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+<div></div>
+</body>
+</html>
