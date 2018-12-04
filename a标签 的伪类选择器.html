@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a 标签的伪类选择器</title>
+    <style>
+        /*a 标签的伪类选择器 用来修改a标签不同状态下的显示样式*/
+        a:link{
+
+            /*未访问过*/
+            color: green;
+        }
+        a:visited{
+            /*已访问过*/
+            color: blue;
+        }
+        a:active{
+            /*长按*/
+            color: red;
+        }
+        a:hover{
+            /*悬停状态*/
+            color: orange;
+        }
+    </style>
+
+
+</head>
+<body>
+<a href="http://www.taobao.com">taobao</a>
+<a href="http://www.baidu.com">baidu</a>
+</body>
+</html>
