@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过度模块手风琴效果</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 960px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+
+        ul li{
+            list-style: none;
+            width: 160px;
+            height: 300px;
+            background-color: red;
+            float: left;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            transition: width 0.5s ;
+        }
+
+        ul li:nth-child(2){
+            background-color: yellow;
+        }
+        ul li:nth-child(3){
+            background-color: #e7ff87;
+        }
+        ul li:nth-child(4){
+            background-color: #908dff;
+        }
+        ul li:nth-child(5){
+            background-color: #ff5d62;
+
+        }
+        ul li:nth-child(6){
+            background-color: #ade9ff;
+
+        }
+        ul li:nth-child(7){
+            background-color: #ff3a81;
+
+        }
+        ul li:nth-child(8){
+            background-color: #b97dff;
+
+        }
+
+        ul:hover li{
+
+            width: 100px;
+        }
+        ul li:hover{
+            width: 460px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+</body>
+</html>
