@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D转换模块练习</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            width: 400px;
+            height: 299px;
+            border: 1px solid #000;
+            background-color: #908dff;
+            margin: 100px auto;
+            /*父元素设置透视*/
+            perspective: 500px;
+        }
+        div img{
+            /*设置中心点以底部*/
+            transform-origin: center bottom;
+            /*设置动画时长*/
+            transition: transform 1s;
+        }
+
+        div:hover img{
+            /*设置延X轴旋转*/
+            transform: rotateX(90deg);
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div><img src="aaaa.jpg" alt=""></div>
+</body>
+</html>

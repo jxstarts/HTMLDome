@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画模块</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+
+            position: relative;
+
+            /*1.告诉系统需要执行哪个动画*/
+            animation-name: lnj;
+
+            /*3.告诉系统动画持续多长时间*/
+            animation-duration: 5s;
+
+            /*告诉系统动画执行的速度*/
+            animation-timing-function: linear;
+
+            /*告诉系统动画需要执行多少次*/
+            animation-iteration-count: 3;
+
+            /*告诉系统是否需要执行往返动画*/
+            animation-direction: alternate;
+
+            /*指定动画等待状态和结束状态的样式*/
+            animation-fill-mode: backwards;
+
+            /*动画的连写模式
+             animation: 动画名称 动画时长 运动速度 延迟时间 执行次数
+            */
+
+            /*animation: lnj 5s ;*/
+
+
+        }
+        /*2.告诉 系统我们需要创建一个名称叫做lnj的动画*/
+        @keyframes lnj {
+            /*from{*/
+                /*margin-left: 0px;*/
+
+            /*}*/
+            /*to{*/
+                /*margin-left: 120px;*/
+
+            /*}*/
+            0%{
+               left: 0;
+                top: 0;
+
+            }
+            25%{
+                left: 300px;
+                top: 0;
+
+            }
+            50%{
+
+                left: 300px;
+                top: 300px;
+
+            }
+            75%{
+                left: 0;
+                top: 300px;
+
+            }
+            100%{
+                left: 0;
+                top: 0;
+
+            }
+
+        }
+        div:hover{
+            /*告诉系统当前动画是否需要暂停*/
+            animation-play-state: paused;
+        }
+
+    </style>
+
+</head>
+<body>
+<div></div>
+</body>
+</html>

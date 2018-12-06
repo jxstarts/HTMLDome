@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D旋转模块</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            border: 1px solid #000;
+            /*相对定位*/
+            position: relative;
+
+
+
+        }
+        ul li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            /*绝对定位*/
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* 形变中心点
+                第一个参数 水平 x轴
+                第二个参数 垂直 y轴
+
+            */
+            /*transform-origin: 0px 0px;*/
+            /*transform-origin: 100% 100%;*/
+            /*transform-origin: center center;*/
+
+
+            /*什么是透视
+                近大远小
+
+                透视属性  设置给父元素  上级
+            */
+            perspective: 500px;
+        }
+
+        ul li:nth-child(1){
+            /*默认情况下所有元素以自己中心点作为参考点*/
+
+            background-color: #e7ff87;
+            transform: rotate(30deg);
+        }
+        ul li:nth-child(2){
+            background-color: #908dff;
+            transform: rotate(50deg);
+        }
+        ul li:nth-child(3){
+            background-color: #ff3a81;
+            transform: rotate(70deg);
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+</body>
+</html>
