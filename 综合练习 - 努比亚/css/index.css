@@ -1,0 +1,90 @@
+
+/* 顶部区域*/
+.top{
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+
+}
+.top .top_in{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: sandybrown;
+}
+.top .top_left{
+    float: left;
+    height: 100%;
+    width: 190px;
+    background-color: lightcoral;
+
+}
+.top .top_left>h1{
+    height: 100%;
+    width: 100%;
+}
+.top .top_left>h1>a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background: url("../images/nubia-logo-inverse-x2-cn.png");
+    background-size: 100%;
+}
+
+.top .top_right{
+    float: right;
+    height: 100%;
+    width: 740px;
+    background-color: darkcyan;
+
+}
+.top .top_right>.top_nav{
+    float: left;
+    width: 550px;
+    height: 100%;
+    background-color: skyblue;
+
+
+}
+.top .top_right>.top_nav>li{
+    float: left;
+}
+.top .top_right>.top_nav>li>a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 60px;
+    margin-left: 40px;
+}
+.top .top_right>.top_nav>li>a:hover{
+    color: #e82c07;
+}
+
+.top .top_right>.top_login{
+    float: right;
+    width: 150px;
+    height: 100%;
+    background-color: skyblue;
+}
+
+/* 广告区域*/
+.banner{
+    height: 860px;
+    width: 100%;
+    background-color: #dddddd;
+
+}
+/* 内容区域*/
+.content{
+    height: 1883px;
+    width: 100%;
+    background-color: cornflowerblue;
+
+}
+/* 底部区域*/
+.footer{
+    height: 396px;
+    width: 100%;
+    background-color: darkolivegreen;
+
+}
